@@ -10,7 +10,7 @@ class PrototypesController < ApplicationController
     Prototype.create(prototype_params)
   end
 
-  Private
+  private
 
   def prototype_params
     params.require(:prototype).permit(:title, :catch_copy, :concept, :image)
